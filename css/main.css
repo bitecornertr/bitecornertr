@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 1200px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.overline {
+  text-decoration-line: line-through !important;
+  text-decoration-thickness: 3px !important;
+}
+.inlineLine {
+  display: inline;
+}
+body {
+  background: repeat url(../images/test.png), #eaff30;
+  background-position: center, center;
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+.swipe-down-text {
+  font-family: "Parisienne", cursive;
+  position: absolute;
+  bottom: 5vh;
+  right: 4vw;
+  font-size: 3vh;
+  text-align: center;
+  font-weight: 300;
+}
+.swipe-down-arrow {
+  position: absolute;
+  bottom: 10vh;
+  right: 15vw;
+  max-height: 15vh;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+hr {
+  height: 3px;
+  border-width: 0px;
+  color: #000000;
+  background-color: #000000;
+  margin: 35px;
+}
+#goTop {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f0f7ee;
+  color: #000000;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 30px;
+  font-size: 30px;
+  animation-name: fadeIn;
+  animation-duration: 250ms;
+}
+.land {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10%;
+  min-height: 90vh;
+}
+.logo,
+.navLogo,
+.mainLogo,
+.mainLogo {
+  max-width: 70vw;
+}
+.navLogo {
+  height: 22px;
+}
+.descLogo {
+  height: 14px;
+}
+.upArrow {
+  filter: invert(18%) sepia(7%) saturate(217%) hue-rotate(227deg)
+    brightness(94%) contrast(88%);
+}
+.land h1 {
+  font-weight: 900;
+  font-size: 17vw;
+  margin: 0 -10px 0 0;
+  letter-spacing: 10px;
+}
+#phone {
+  font-weight: 500;
+  margin: 0;
+  font-size: 8.5vw;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 90vh;
+}
+.nav ul {
+  width: 100%;
+  font-weight: 500;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul a {
+  font-size: 65%;
+  font-weight: 700;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  min-width: 150px;
+  height: 90px;
+  border: #000000 2px solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.menu h3 {
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+.urun {
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.urun .content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.urun .content .desc {
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0px 0px 0px 3px;
+}
+#new {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#new .name {
+  padding: 5px;
+}
+
+.adet {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 24px;
+}
+.underlined {
+  padding-left: 20px;
+  padding-right: 15px;
+  text-decoration: underline;
+}
+.dortlu {
+  padding-right: 32px;
+}
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px; /* Standart boyut (istediğiniz değeri px, rem veya em olarak ayarlayın) */
+  line-height: 1.4; /* Okunabilirlik için satır yüksekliği */
+  font-weight: normal; /* Kalınlık (bold yerine normal yapar) */
+  margin: 0 0 10px 0; /* Dış boşluk (üst-sağ-alt-sol) */
+}
+#ac1 {
+  display: flex;                  /* Flexbox aktif */
+  justify-content: center;        /* Yatay ortala */
+  align-items: center;            /* Dikey ortala */
+  text-align: center;             /* Metin ortala */
+  min-height: 100px;             /* Minimum yükseklik (isteğe bağlı) */
+}
+
+#ac1 .desc {
+  width: 100%;                   /* Container genişliğine uyum sağla */
+  padding: 10px;
+  text-align: center !important;                 /* Okunabilirlik için boşluk (isteğe bağlı) */
+}
+.language-popup {
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+.language-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.language-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.language-btn {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.language-btn.tr {
+  background: #E30A17;
+  color: white;
+}
+.language-btn.eng {
+  background: #0A17E3;
+  color: white;
+}
+.language-btn.rus {
+  background: #E30A17;
+  color: white;
+}
+.language-btn:hover {
+  opacity: 0.8;
+}

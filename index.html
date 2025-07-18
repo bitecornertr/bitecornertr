@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bite Corner Qr Menu</title>
+  </head>
+
+  <body style="max-width: 768px; margin: auto">
+    <div class="language-popup" id="languagePopup">
+      <div class="language-box">
+        <h2>Lütfen Dilinizi Seçin / Please Choose Your Language / Выберите язык</h2>
+        <button class="language-btn tr" onclick="redirectTo('tr')">TÜRKÇE</button>
+        <button class="language-btn eng" onclick="redirectTo('eng')">ENGLISH</button>
+        <button class="language-btn rus" onclick="redirectTo('rus')">РУССКИЙ</button>
+      </div>
+    </div>
+    <a href="#navigation" id="goTop" title="Go to top"
+      ><img
+        src="images/icons/arrow-up-solid.svg"
+        class="upArrow"
+        style="width: 27px"
+    /></a>
+    <header id="navbar"></header>
+
+    <div class="land" id="landing">
+      <img src="images/trans_logo.svg" class="mainLogo" />
+      <h3>Bite Corner'a Hoş Geldiniz</h3>
+      <h4>Ucuz Fiyatlar, Efsane Lezzetler<br></br></h4>
+      <h4>Bite Corner'da sizi bekliyor</h4>
+    </div>
+    <br />
+
+    <!-- Kategori İçin
+    <hr id="kategori id"/>
+    <div class="menu">
+      <h3>Kategori Adı</h3>
+      <div class="urun" id="ham">
+        <div class="content">
+          <a
+            href="images/breakfast/breakburger.webp"
+            data-lightbox="break-burger"
+            data-title="BREAKBURGER"
+          >
+          <div class="name">Breakburger</div>
+          </a>
+          <div class="desc">
+            130gr köfte, domates, marul, turşu, ketçap, mayonez. Patates
+            kızartması ile servis edilir.
+          </div>
+        </div>
+        <div class="price">280₺</div>
+      </div>
+    </div> -->
+    
+    <hr id="navigation" />
+    <div class="nav">
+      Eşsiz Yiyecekler
+      <ul>
+        <a href="#smashburgers">Smash Burgerler</a>
+        <a href="#chickenburgers">Çıtır Tavuk Burgerler</a>
+        <a href="#neapolitanpizzas">Neapolitan Pizza</a> 
+        <a href="#crispychickens">Çıtır Tavuk</a>
+        <a href="#bitedog">Sosisli</a>
+        <div class="urun" id="ac1">
+        <div class="content">
+          <div class="desc">
+            Siparişlerinizin Yanında Ekstra Patates Kızartması Veya İçecek Gelmemektedir. İçeceklerinizi Ve Patateslerini Ayrıca Söylemeniz Gerekmektedir.
+          </div>
+        </div>
+      </div> 
+      </ul>
+      Ekstralar
+      <ul>
+        <a href="#makeitmenu">Menü Haline Getir</a>
+        <a href="#patato">Patates Kızartması</a>
+        <a href="#sauces">Soslar</a>
+        <a href="#add-ons">Eklenebilirler</a>
+        <a href="#soft-drinks">Meşrubatlar</a>
+        <a href="#beers">Biralar</a>
+      </ul>
+    </div>
+    <hr id="smashburgers"/>
+    <div class="menu">
+      <h3>Smash Burgerler</h3>
+      <div class="urun" id="biteburger">
+        <div class="content">
+          <div class="name">Bite Burger</div>
+          </a>
+          <div class="desc">
+            2x60 Gr Dana Köfte, Cheddar Peyniri, Bite Sos, Marul, Turşu
+          </div>
+        </div>
+        <div class="price">330₺</div>
+      </div>
+      <div class="urun" id="truffleburger">
+        <div class="content">
+          <div class="name">Trüflü Burger</div>
+          </a>
+          <div class="desc">
+            2x60 Gr Dana Köfte, Cheddar Peyniri, Trüflü Mayonez, Karamelize Soğan
+          </div>
+        </div>
+        <div class="price">360₺</div>
+      </div>
+      <div class="urun" id="bbqburger">
+        <div class="content">
+          <div class="name">BBQ Burger</div>
+          </a>
+          <div class="desc">
+            2x60 Gr Dana Köfte, Cheddar Peyniri, Dana Bacon, Çıtır Soğan, Barbekü Sos, Marul, Turşu
+          </div>
+        </div>
+        <div class="price">360₺</div>
+      </div>
+      <div class="urun" id="bbqburger">
+        <div class="content">
+          <div class="name">Sarımsaklı Burger</div>
+          </a>
+          <div class="desc">
+            2x60 Gr Dana Köfte, Cheddar Peyniri, Sarımsak Sos, Saman Patates, Marul, Turşu
+          </div>
+        </div>
+        <div class="price">340₺</div>
+      </div>
+    <hr id="chickenburgers"/>
+    <div class="menu">
+      <h3>Çıtır Tavuk Burgerler</h3>
+      <div class="urun" id="southernchicken">
+        <div class="content">
+          <div class="name">Güney Usulü Tavuk Burger</div>
+          </a>
+          <div class="desc">
+            Çıtır Tavuk, Lahana Salatası, Cheddar Sos, Sarımsak Sos
+          </div>
+        </div>
+        <div class="price">280₺</div>
+      </div>
+      <div class="urun" id="buffalochicken">
+        <div class="content">
+          <div class="name">Buffalo Tavuk Burger</div>
+          </a>
+          <div class="desc">
+            Çıtır Tavuk, Acılı Buffalo Sos, Rokfor Peyniri Sos, Marul, Turşu
+          </div>
+        </div>
+        <div class="price">320₺</div>
+      </div>
+      <div class="urun" id="ceasarchicken">
+        <div class="content">
+          <div class="name">Sezar Tavuk Burger</div>
+          </a>
+          <div class="desc">
+            Çıtır Tavuk, Sezar Sos, Parmesan Peyniri, Marul, Teriyaki Sos
+          </div>
+        </div>
+        <div class="price">290₺</div>
+      </div>
+      <div class="urun" id="ceasarchicken">
+        <div class="content">
+          <div class="name">Sezar Tavuk Burger</div>
+          </a>
+          <div class="desc">
+            Çıtır Tavuk, Sezar Sos, Parmesan Peyniri, Marul, Teriyaki Sos
+          </div>
+        </div>
+        <div class="price">290₺</div>
+      </div>
+      <div class="urun" id="ceasarchicken">
+        <div class="content">
+          <div class="name">Samurai Tavuk Burger 🔥</div>
+          </a>
+          <div class="desc">
+            Çıtır Tavuk, Acı Samurai Sos, Cheddar Sos, Saman Patates, Turşu, Marul
+          </div>
+        </div>
+        <div class="price">300₺</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="js/lightbox-plus-jquery.min.js"
+    ></script>
+    <script>
+    function redirectTo(lang) {
+      const landing = document.getElementById('landing');
+      const popup = document.getElementById('languagePopup');
+
+      if (lang === 'tr') {
+        popup.style.display = 'none';
+        landing.style.display = 'block';
+      } 
+      else if (lang === 'eng') {
+        window.location.href = "menu-english.html";
+      }
+      else if (lang === 'rus') {
+        window.location.href = "menu-russian.html";
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('landing').style.display = 'none';
+    });
+  </script>
+  </body>
+</html>
